@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Street Wear</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="main.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  </head>
+<body>
+ <button>
+   If you want to go back to the main page click <a href="index.html">Here</a>
+ </button>
+ <button>
+   If you want to request a new form click<a href="account.html"> Here</a>
+ </button>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">To Donate Or Sell Fill Out This Form<a href="index.html"></a></h1>
+   </div>
+</section>
+<div class="container submit-view">
+    <form id="submit-location">
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input required type="text" class="form-control" id="Name">
+        </div>
+        <div class="form-group">
+          <label for="Type">Type</label>
+          <input required type="text" class="form-control" id="Type">
+        </div>
+        <div class="form-group">
+          <label for="Condition">Condition</label>
+          <input required type="text" class="form-control" id="Condition">
+        </div>
+        <div class="form-group">
+          <label for="Description">Description</label>
+          <textarea class="form-control" id="Description" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="Brand">Brand</label>
+          <select class="form-control" id="Brand">
+            <option>Supreme</option>
+            <option>Bape</option>
+            <option>Option</option>
+          </select>
+        </div>
+        <div class="form-group">
+              <label for="Price">Price</label>
+              <input required type="number" class="form-control" id="Price">
+            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="submit.js"></script>
+</body>
+</html>
+ 
+ 
+ 
+

@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            /* grid-template-columns:1fr 1fr 1fr;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            /* grid-auto-rows:100px; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .nested>div {
+            border: #333 1px solid;
+            padding: 1em;
+        }
+
+
+        .box1{
+      /*align-self:start;*/
+      grid-column:1/4;
+    }
+
+    .box2{
+      /*align-self:end;*/
+      grid-column:3;
+      grid-row:1/4;
+    }
+
+    .box3{
+      /*justify-self:end;*/
+      grid-column:2/4;
+      grid-row:3;
+    }
+
+    .box4{
+      grid-column:1;
+      grid-row:1/2;
+      border:1px solid #333;
+    }
+
+    body{
+        background-color:grey;
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class=box1>
+        <div>
+           Some  text here
+        </div>
+        </div>
+    </div>
+
+    <div class="box4">      Create a navigation bar here
+        <div class="fresh4">
+                <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                      </ul>
+        </div>
+    </div>
+
+        <div>
+            <div class="nested">
+                <!--main Nested loop-->
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+                <div>Lorem</div>
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem
+        </div>
+        <div>
+            something
+        </div>
+    </div>
+
+
+</body>
+
+</html>
